@@ -72,35 +72,27 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "CryptoPlace",
+    des: "Developed a blockchain analytics platform delivering real-time crypto insights and data visualization",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://github.com/gouravgodla/cryptoplace",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "StackJournal",
+    des: "Built a responsive blog web application using React, Node.js, Express.js, and EJS templating engine.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://github.com/gouravgodla/blog-application-nodejs",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: " Evently",
+    des: " Developed a full-stack event management platform using Next.js, TypeScript, and Node.js.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://github.com/gouravgodla/evently-project",
   },
 ];
 
@@ -109,31 +101,31 @@ export const testimonials = [
     quote:
       "Collaborating with Gourav was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Gourav's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Gourav is the ideal partner.",
     name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    title: "",
   },
   {
     quote:
       "Working with Gourav has been a transformative experience. His ability to solve complex problems with clean, maintainable code made our development process smooth and efficient.",
     name: "Sarah Thompson",
-    title: "Product Manager at NovaTech",
+    title: "",
   },
   {
     quote:
       "Gourav consistently delivers top-notch work. His deep understanding of full-stack development and attention to detail helped us launch our platform ahead of schedule.",
     name: "David Lee",
-    title: "CTO at PixelWave",
+    title: "",
   },
   {
     quote:
       "What sets Gourav apart is his passion for learning and adapting quickly. He brought fresh ideas to our frontend revamp and improved our performance metrics significantly.",
     name: "Priya Mehra",
-    title: "Lead Designer at HorizonUI",
+    title: "",
   },
   {
     quote:
       "I was impressed by Gourav's ability to take ownership of critical backend features and integrate them seamlessly with the frontend. He's a valuable team player.",
     name: "Alex Kim",
-    title: "Engineering Manager at TechBridge",
+    title: "",
   },
 ];
 

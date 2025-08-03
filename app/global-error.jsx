@@ -17,3 +17,5 @@ export default function GlobalError({ error }) {
     </html>
   );
 }
+
+

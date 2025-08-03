@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
@@ -51,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const rightLists = ["ReactJS", "Express", "Typescript"];
 
   const [copied, setCopied] = useState(false);
 
