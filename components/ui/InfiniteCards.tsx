@@ -162,50 +162,36 @@ export const InfiniteMovingCards = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const scrollerRef = useRef<HTMLUListElement>(null);
 
-  const [start, setStart] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [start, setStart] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
-    if (!start && typeof window !== "undefined") {
-      addAnimation();
-    }
-  }, [start]);
+    if (!mounted || start) return;
+    if (!containerRef.current || !scrollerRef.current) return;
 
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+    const scrollerContent = Array.from(scrollerRef.current.children);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        scrollerRef.current!.appendChild(duplicatedItem);
-      });
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      scrollerRef.current!.appendChild(duplicatedItem);
+    });
 
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }
+    const directionValue = direction === "left" ? "forwards" : "reverse";
+    const speedValue =
+      speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
 
-  const getDirection = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        direction === "left" ? "forwards" : "reverse"
-      );
-    }
-  };
+    containerRef.current.style.setProperty(
+      "--animation-direction",
+      directionValue
+    );
+    containerRef.current.style.setProperty("--animation-duration", speedValue);
 
-  const getSpeed = () => {
-    if (containerRef.current) {
-      const duration =
-        speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
-      containerRef.current.style.setProperty("--animation-duration", duration);
-    }
-  };
+    setStart(true);
+  }, [mounted, start, direction, speed]);
 
   if (!mounted) return null;
 
