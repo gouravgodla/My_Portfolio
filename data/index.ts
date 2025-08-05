@@ -101,31 +101,31 @@ export const testimonials = [
   {
     quote:
       "Collaborating with Gourav was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Gourav's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Gourav is the ideal partner.",
-    name: "Michael Johnson",
+    name: "Goutam Singh",
     title: "",
   },
   {
     quote:
       "Working with Gourav has been a transformative experience. His ability to solve complex problems with clean, maintainable code made our development process smooth and efficient.",
-    name: "Sarah Thompson",
+    name: "Atul",
     title: "",
   },
   {
     quote:
       "Gourav consistently delivers top-notch work. His deep understanding of full-stack development and attention to detail helped us launch our platform ahead of schedule.",
-    name: "David Lee",
+    name: "Amit",
     title: "",
   },
   {
     quote:
       "What sets Gourav apart is his passion for learning and adapting quickly. He brought fresh ideas to our frontend revamp and improved our performance metrics significantly.",
-    name: "Priya Mehra",
+    name: "Abhay",
     title: "",
   },
   {
     quote:
       "I was impressed by Gourav's ability to take ownership of critical backend features and integrate them seamlessly with the frontend. He's a valuable team player.",
-    name: "Alex Kim",
+    name: "HM",
     title: "",
   },
 ];
